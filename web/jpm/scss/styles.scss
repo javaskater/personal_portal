@@ -1,0 +1,86 @@
+@import "../bower_components/bootstrap/scss/bootstrap.scss";
+/*
+* All my customizations, MAIN CSS
+* Introduction to the SASS syntax: http://sass-lang.com/guide
+* More about Sass possibilities: http://sass-lang.com/documentation/file.SASS_REFERENCE.html
+*/
+
+$bg_main_page_main_tone: #F7F9BC;
+$bg_main_page_secondary_tone: #9DC2DF;
+
+.page {
+    min-height:800px;
+}
+
+.presentation {
+    padding-top: 6rem;
+}
+
+.contact_form {
+    padding-top: 6rem;
+}
+
+.my_carousel {
+    background-color: $bg_main_page_main_tone;
+    .title {
+        padding-top:2rem;
+        padding-left:1rem;
+        padding-bottom:1rem;
+    }
+}
+
+.bg_navbar{
+    background-color: white;
+}
+
+.welcome {
+    background-color: $bg_main_page_secondary_tone;
+    background-size: cover;
+    color: black;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    .nav {
+        background-color:$bg_main_page_main_tone;
+        .active{
+            background-color:lightgray;
+        }
+    }
+    .tab-pane{
+        padding:1rem;
+        background-color:$bg_main_page_main_tone;
+    }
+}
+
+.bg-contact {
+    background-image: url('../images/rer.jpg');
+    background-size: cover;
+    color: #0070dd;;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: oblique;
+    min-height:600px;
+    .form-error {
+        color:red;
+        ul li {
+            font-size: 1rem;
+            font-weight:normal;
+        }
+    }
+}
+
+footer{
+    max-height:200px;
+    background-color:$bg_main_page_main_tone;
+}
+
+.jpm_alert {
+    position: fixed;
+    margin-top: 4em;
+    width: 90%;
+    margin-left: 4em;
+    z-index: 3000;
+}
+
+.socials{
+    font-size: 2rem;
+}

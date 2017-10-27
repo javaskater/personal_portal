@@ -1,0 +1,95 @@
+{# app/Resources/views/randonnees/index.html.twig #}
+{% extends 'base.html.twig' %}
+{% import 'AppBundle:JPM:localization.html.twig' as my_locale %}
+{% block title %}
+{{ nom }}
+{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet"
+	href="{{ asset('jpm/bower_components/font-awesome/css/font-awesome.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('jpm/css/styles.css') }}" />
+{% endblock %}
+{% block header_javascripts %}
+{{ include ('AppBundle:JPM:google_analytics.html.twig', {'ga_code' : my_ga_code }) }}
+{% endblock %}
+{% block body %}
+{% block navbar %}
+<div data-target=".navbar">
+
+	{# https://getbootstrap.com/docs/4.0/components/navbar/ #}
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="{{ path('jpm_presentation') }}"><i
+			class="fa fa-globe" aria-hidden="true"></i> jpmena </a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"><a class="nav-link active"
+					href="http://wiki.jpmena.eu/"><i class="fa fa-wikipedia-w"
+						aria-hidden="true"></i> {% trans %}menu.main.wiki{% endtrans %}</a></li>
+				<li class="nav-item"><a class="nav-link active"
+					href="http://blog.jpmena.eu/"><i class="fa fa-wordpress"
+						aria-hidden="true"></i> {% trans %}menu.main.blog{% endtrans %}</a></li>
+				<li class="nav-item"><a class="nav-link active"
+					href="https://github.com/javaskater"><i class="fa fa-github"
+						aria-hidden="true"></i> {% trans %}menu.main.github{% endtrans %}</a></li>
+				<li class="nav-item active"><a class="nav-link"
+					href="{{ path('contact_me_action', {'lang': locale}) }}"
+					id="contactme"><i class="fa fa-envelope" aria-hidden="true"></i>
+						{% trans %}menu.main.contact{% endtrans %}</a></li>
+			</ul>
+			<a href="{{ path('setlocale', {'language': 'fr'}) }}"
+				title="passer en français" data-toggle="tooltip"
+				data-placement="left"><i class="fa fa-flag" aria-hidden="true"></i>
+				fr |</a>&nbsp;</a>&nbsp; <a
+				href="{{ path('setlocale', {'language': 'en'}) }}"
+				title="switch to english" data-toggle="tooltip"
+				data-placement="left"><i class="fa fa-flag" aria-hidden="true"></i>
+				en |</a>&nbsp; <a href="{{ path('setlocale', {'language': 'de'}) }}"
+				title="jetzt auf Deutsch" data-toggle="tooltip" data-placement="left"><i
+				class="fa fa-flag" aria-hidden="true"></i> de</a>&nbsp;</a>
+		</div>
+	</nav>
+</div>
+{% endblock %}
+<!-- on ajoutera des fenêtres modales par la suite -->
+{# {{ kint(nom) }} #}
+{% block main %}
+<div class="container-fluid my_carousel">
+	<div class="container">
+		<div class="row">
+			{{ include ('AppBundle:JPM:life_carousel.html.twig') }}
+			{{ my_locale.localized_include('AppBundle:JPM:short',locale,{}) }}
+		</div>
+	</div>
+	{# {{ include ('AppBundle:JPM:resume_accordion.html.twig',
+	{'container_class' : page_class}) }} #} {# {{ include
+	('AppBundle:JPM:resume_tabs_en.html.twig', {'container_class' :
+	page_class}) }} #}
+	{{ my_locale.localized_include('AppBundle:JPM:resume_tabs',locale,{'container_class' : page_class}) }}
+	{% endblock %}
+	{% block footer %}
+	{{ my_locale.localized_include('AppBundle:JPM:footer',locale,{'container_class' : page_class}) }}
+	{% endblock %}
+
+	{% endblock %}
+
+
+	{% block javascripts %}
+	<script
+		src="{{ asset('jpm/bower_components/jquery/dist/jquery.min.js') }}"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+	<script
+		src="{{ asset('jpm/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+	<script>
+		$(function() {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+	{% endblock %}

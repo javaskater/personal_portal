@@ -1,0 +1,23 @@
+{
+  "name": "jpm",
+  "version": "0.0.1",
+  "description": "Tooling for processing SASS files to CSS",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sass",
+    "css"
+  ],
+  "author": "Jean-Pierre MENA",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.9.0",
+    "node-sass": "^4.5.3"
+  }
+}

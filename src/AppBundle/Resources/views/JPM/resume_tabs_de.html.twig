@@ -1,0 +1,173 @@
+<div class="container-fluid {{ container_class}}" id="short_resumee">
+    <div class="container">
+        <!-- <div class="row">
+            <h3>A short resume:</h3>
+        </div>-->
+        <ul class="nav nav-tabs" role="tablist">
+        	<li class="nav-item">
+                <a class="nav-link active" id="presentation-tab" data-toggle="tab" href="#presentation" role="tab" aria-controls="presentation" aria-expanded="true">Ich Heute:</a>
+             </li>
+            <li class="nav-item">
+            	<a class="nav-link" id="services-personal-tab" data-toggle="tab" href="#services-personal" role="tab" aria-controls="services-personal">Freiwillige Aktivitäten:</a>
+            </li>
+            <li class="nav-item">
+            	<a class="nav-link" id="services-techs-tab" data-toggle="tab" href="#services-techs" role="tab" aria-controls="services-techs">Technologien:</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="presentation" role="tabpanel" aria-labelledby="presentation-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="{{ asset('jpm/images/jpreduit_de.jpg') }}" class="img-fluid" title="Jean-Pierre bei den Ankunft am Brandenburger Tor (Berlin Marathon 2014)" data-toggle="tooltip" data-placement="top" /> 
+                        </div>
+                        <div class="col-sm-4">
+                            <h2 class="text-md-center">Senior Software Entwickler</h2>
+                            <h3 class="text-md-center">Heute <a href="https://www.drupal.org/8" target="_blank">Drupal 8 <i class="fa fa-drupal" aria-hidden="true"></i></a> Spezialist</h3>
+                            <h3 class="text-md-center">Am Französischen Finanzministerium</h3>
+                            <h4 class="text-md-center">Ich trainiere auch Angestellte bei der Webseite Entwicklung mit
+                                <a href="https://www.drupal.org/8" target="_blank">Drupal <i class="fa fa-drupal" aria-hidden="true"></i></a></h4>
+                        </div>
+                        <div class="col-sm-4">
+                            <h2 class="text-md-center"><a href="http://www.ec-lille.fr" target="_blank">Mehrsprachiger <i class="fa fa-language" aria-hidden="true"></i> Ingenieur </a></h2>
+                            <ul>
+                                <li class="font-italic font-weight-bold">Deutsch: zweisprachig</li>
+                                <li class="font-italic">Englisch: fliessend / Arbeitsprache</li>
+                                <li>Spanisch / B2 Niveau</li>
+                                <li>Italienisch / B2 Niveau</li>
+                                <li class="font-italic">Russisch: C1 Niveau als Ziel</li>
+                            </ul>
+                            <h5 class="text-md-center">
+								<a href="{{ asset('jpm/uploads/de/CVEuropassJPMena_de.pdf') }}"
+									target="_blank" title="Link anklicken um meinen Lebenslauf herunterzuladen" data-toggle="tooltip"
+            data-placement="bottom"> <i class="fa fa-file-pdf-o"
+									aria-hidden="true"></i> Mehr über mich (Europass Lebenslauf - noch im Bau)
+								</a>
+							</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show" id="services-personal" role="tabpanel" aria-labelledby="services-personal-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h2>
+                                Ich bin seit 2010 den Webmaster vom <a href="http://rsmontreuil.fr"
+                                                     target="_blank">Roller Skating Montreuillois</a>
+                            </h2>
+                            <h3>Zusätzlich zu den klassichen Aufgaben eines Webmasters</h3>
+                            <h4>I habe zwei Wordpress Module entwickelt</h4>
+                            <ul>
+                                <li>Ein Modul zum die Daten vom original Joomla Website zu exportieren, und die im neuen Wordpress 4.x Site zu importieren</li>
+                                <li>Ein Modul um Wordpress Bilder und Gallerien anders zu präsentieren</li>
+                            </ul>
+                            <h4>Ich war auch als ausbilder täẗig</h4>
+                            <ul>
+                                <li>Ich habe fünf Verantwörtliche vom Inlineskating Verein zu dem Gebrauch von Wordpress ausgeblidet</li>
+                                <li>Um die Ausbildung zu ergänzen habe ich manches auf einem <a
+                                        href="http://wiki.rsmontreuil.fr" target="_blank">
+                                        DokuWiki</a> erklärt</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h2>
+                                Ich bin seit 2013 den Webmaster of the <a href="http://rollersports93.fr"
+                                                     target="_blank">Inlineskating Kreis-Komitee</a>
+                            </h2>
+                            <h3>Zusätzlich zu den klassichen Aufgaben eines Webmasters</h3>
+                            <h4>war ich auch als ausbilder täẗig</h4>
+                            <ul>
+                                <li>Ich habe zwei Mieglieder vom Inlineskating Komitee zu dem Gebrauch von Wordpress ausgeblidet</li>
+                                <li>Um die Ausbildung zu ergänzen habe ich manches auf einem <a
+                                        href="http://wiki.rollersports93.fr" target="_blank">
+                                        DokuWiki</a> erklärt</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h2>
+                                Ich bin seit 2009 bei <a href="http://http://rifrando.fr/"
+                                                     target="_blank">Randonneurs Ile de France (RIF)</a> Software Kommission tâtig
+                            </h2>
+                            <h3>Der RIF ist der Hauptwanderverein im Pariser Land</h3>
+                            <p>Mehr als 3000 Wanderer sind Mitglied vom RIF</p>
+                            <p>Dabei habe ich:</p>
+                            <ul>
+                                <li>Verschiedene ComputerProgramme in Python entwickelt:</li>
+                                <ul>
+                                    <li>Zum Datentransfer von der Verein ACCESS Datenbank zur Mitglieeder Webseite</li>
+                                    <li>And in die andere Richtung von  Mitglieder Webseite zur Verein Datenbank durch REST Webservices</li>
+                                    <li>Zur automatisierte Backup vom der Verein ACCESS Datenbank (nach Verschlüsselung)</li>
+                                    <li>zur Erzeugung der Papierversion des Wanderprogramm für die zwei nächssten Monate</li>
+                                </ul>
+                                <li>Ich bin immer zuständig für die weiteren Entwicklungen von der <a
+                                        href="http://adh.rifrando.asso.fr/pages/mentions_legales"
+                                        target="_blank">Wanderer Webseite</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show" id="services-techs" role="tabpanel" aria-labelledby="services-techs-tab">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Content Management Systems</h3>
+                        <ul>
+                            <li><a href="https://www.drupal.org/8" target="_blank"><i class="fa fa-drupal" aria-hidden="true"></i> Drupal 8</a> ist das Content Management System (kurz CMS) über dem ich beim Finanzministerium ein der Experte bin, damit:</li>
+                            <ul>
+                                <li>nehme ich an der Entwicklung komplexer Lösungen teil</li>
+                                <li>bilde ich Angestellte sei es bei der Verwaltung oder bei der Entwicklung mit Drupal 8</li>      
+                            </ul>
+                            <li>Meine Erfahrungen teile ich durch  <a href="http://wiki.jpmena.eu/index.php?title=Accueil#Cas_du_d.C3.A9veloppement_Symfony.2FDrupal8" target="_blank"> mein Wiki <i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                            <li><a href="https://wordpress.org/" target="_blank"><i class="fa fa-wordpress" aria-hidden="true"></i>
+                                    </i> Wordpress 4.x</a> ist das CMS das ich für Inline Skating Kommunikation einsetze</li>
+                            <ul>
+                                <li> <a href="http://rsmontreuil.fr/" target="_blank"> Roller Skating Montreuillois </a></li>
+                                <li> <a href="http://rollersports93.fr/" target="_blank">Inlineskating Komitee von Seine Saint Denis </a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Server-Side Technologien:</h3>
+                        <ul>
+                            <li>Java J2EE (Struts / Spring)</li>
+                            <li>Symfony 3.x / PHP 7</li>
+                            <li>Python Django / Google App Engine</li>
+                        </ul>
+                        <h3>Client-Side Technologien:</h3>
+                        <ul>
+                            <li>JQuery</li>
+                            <li>Bootstrap 3.x and 4.x</li>
+                            <li>React JS</li>
+                        </ul>
+                        <h3>Noch als Projekt:</h3>
+                        <ul>
+                            <li>Android Apps Entwicklung in Java (Dalvik Virtual Machine)</li>
+                            <li>Angular 2 einsetzen</li>
+                            <li><i>Virtualisierung</i> von meinen Entwicklung Umgebungen auf meinem privaten Computer (Docker und/oder Vagrant als Lösungen)</li>
+                            <li>Enticlung mit Ruby/Rails 5 apps</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Ressourcen:</h3>
+                        <h4>Persönliches:</h4>
+                        <ul>
+                            <li><a href="https://github.com/javaskater?tab=repositories" target="_blank"> Mein GitHub <i
+                                        class="fa fa-github" aria-hidden="true"></i> Konto</a></li>
+                            <li><a href="http://wiki.jpmena.eu/index.php?title=Accueil" target="_blank"> Mein Wiki <i class="fa fa-wikipedia-w"
+                                                                                                                         aria-hidden="true"></i> <i>(zZ nur auf Französisch)</i></a></li>
+                            <li><a href="http://blog.jpmena.eu/" target="_blank"> Mein Blog <i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <h4>Bücher:</h4>
+                        <ul>
+                            <li><a href="http://shop.oreilly.com/" target="_blank">OReilly eBooks (Deal of the Day)</a></li>
+                            <li><a href="https://www.manning.com/dotd" target="_blank">Manning eBooks (Deal of the Day)</a></li>
+                            <li><a href="http://www.informit.com/" target="_blank">Informit eBooks</a></li>
+                            <li><a href="https://www.packtpub.com/" target="_blank">Packt eBooks</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

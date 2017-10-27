@@ -1,0 +1,178 @@
+<div class="container-fluid {{ container_class}}" id="short_resumee">
+    <div class="container">
+        <!-- <div class="row">
+            <h3>A short resume:</h3>
+        </div>-->
+        <ul class="nav nav-tabs" role="tablist">
+        	<li class="nav-item">
+                <a class="nav-link active" id="presentation-tab" data-toggle="tab" href="#presentation" role="tab" aria-controls="presentation" aria-expanded="true">Some Words about me</a>
+             </li>
+            <li class="nav-item">
+            	<a class="nav-link" id="services-personal-tab" data-toggle="tab" href="#services-personal" role="tab" aria-controls="services-personal">As a volunteer</a>
+            </li>
+            <li class="nav-item">
+            	<a class="nav-link" id="services-techs-tab" data-toggle="tab" href="#services-techs" role="tab" aria-controls="services-techs">The techs I work with</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+        	<div class="tab-pane fade show active" id="presentation" role="tabpanel" aria-labelledby="presentation-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="{{ asset('jpm/images/jpreduit.png') }}" class="img-fluid" title="Jean-Pierre at the 6Hours Skating of Angers (Sept. 2016)" data-toggle="tooltip" data-placement="top" /> 
+                        </div>
+                        <div class="col-sm-4">
+                            <h2 class="text-md-center">Senior Web Developer</h2>
+                            <h3 class="text-md-center">Also a <a href="https://www.drupal.org/8" target="_blank">Drupal8 <i class="fa fa-drupal" aria-hidden="true"></i></a> Expert</h3>
+                            <h3 class="text-md-center">At the Ministry of Finance (France)</h3>
+                            <h4 class="text-md-center">Also training people for developing projects
+                                using <a href="https://www.drupal.org/8" target="_blank">Drupal8 <i class="fa fa-drupal" aria-hidden="true"></i></a></h4>
+                        </div>
+                        <div class="col-sm-4">
+                            <h2 class="text-md-center"><a href="http://www.ec-lille.fr" target="_blank">Multilingual <i class="fa fa-language" aria-hidden="true"></i> engineer </a></h2>
+                            <ul>
+                                <li class="font-italic font-weight-bold">Bilingual in German</li>
+                                <li class="font-italic">Fluent in English</li>
+                                <li>Spanish / B2 level</li>
+                                <li>Italian / B2 level</li>
+                                <li class="font-italic">Studying Russian to reach the C1 level</li>
+                            </ul>
+                             <h5 class="text-md-center">
+								<a href="{{ asset('jpm/uploads/en/CVEuropassJPMena_en.pdf') }}"
+									target="_blank" title="Click on that link in order to downlload my resumee" data-toggle="tooltip"
+            data-placement="bottom"> <i class="fa fa-file-pdf-o"
+									aria-hidden="true"></i> More about me (Europass resumee, work still in progress)
+								</a>
+							</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show" id="services-personal" role="tabpanel" aria-labelledby="services-personal-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h2>
+                                Webmaster of the <a href="http://rsmontreuil.fr"
+                                                     target="_blank">Roller Skating Montreuillois</a>
+                            </h2>
+                            <h3>Working since September 2010 on that website</h3>
+                            <h4>I developed</h4>
+                            <ul>
+                                <li>A WordPress module for migrating the initial club's website (using Joomla 2.5)
+                                    to the its new WordPress 4.x version</li>
+                                <li>A WordPress wodule for animating the
+                                    default WordPress galleries and posts' embedded images</li>
+                            </ul>
+                            <h4>As a trainer</h4>
+                            <ul>
+                                <li>I trained five members of the club on the main usages of WordPress</li>
+                                <li>Proposed some tutorials on a <a
+                                        href="http://wiki.rsmontreuil.fr" target="_blank">dedicated
+                                        DokuWiki</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h2>
+                                Webmaster of the <a href="http://rollersports93.fr"
+                                                     target="_blank">Inline skating local committee</a>
+                            </h2>
+                            <h3>Working since September 2013 on that website</h3>
+                            <h4>As a trainer</h4>
+                            <ul>
+                                <li>I trained two members of the inline skating local committee on the main usages of WordPress</li>
+                                <li>Proposed some tutorials on a <a
+                                        href="http://wiki.rollersports93.fr" target="_blank">dedicated
+                                        DokuWiki</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h2>
+                                Since 2009 at <a href="http://rifrando.fr/"
+                                                     target="_blank">Randonneurs Ile de France (RIF)</a> software board
+                            </h2>
+                            <h3>RIF is the Paris'region main hikers association</h3>
+                            <p>That hiking association is made of more than 3000 hikers</p>
+                            <p>Since 2009, s volunteer, I</p>
+                            <ul>
+                                <li>developed differents Python scripts for:</li>
+                                <ul>
+                                    <li>transferring the proposed hikes from the main ACCESS
+                                        database to the 'hikers' private website</li>
+                                    <li>and the other way around from the 'hikers' private
+                                        website to the ACCESS database using REST webservices</li>
+                                    <li>backuping</li>
+                                    <li>generating the paper version of the hiking program
+                                        for the next two months</li>
+                                </ul>
+                                <li>maintain and develop the <a
+                                        href="http://adh.rifrando.asso.fr/pages/mentions_legales"
+                                        target="_blank">hikers' private Website</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show" id="services-techs" role="tabpanel" aria-labelledby="services-techs-tab">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Content Management Systems</h3>
+                        <ul>
+                            <li><a href="https://www.drupal.org/8" target="_blank"><i class="fa fa-drupal" aria-hidden="true"></i> Drupal 8</a> is the Content Management System used at work, it allows me:</li>
+                            <ul>
+                                <li>To develop complex solutions based on it</li>
+                                <li>To train people on administering and developing Drupal8</li>      
+                            </ul>
+                            <li>That activity makes me enrich a knowledge base through a <a href="http://wiki.jpmena.eu/index.php?title=Accueil#Cas_du_d.C3.A9veloppement_Symfony.2FDrupal8" target="_blank"> personal MediaWiki <i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                            <li><a href="https://wordpress.org/" target="_blank"><i class="fa fa-wordpress" aria-hidden="true"></i>
+                                    </i> Wordpress 4.x</a> is the Content Managment System I use for inline skating clubs</li>
+                            <ul>
+                                <li> <a href="http://rsmontreuil.fr/" target="_blank"> Roller Skating Montreuillois </a></li>
+                                <li> <a href="http://rollersports93.fr/" target="_blank">Comité de Roller du 93 </a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Server Side Technologies</h3>
+                        <ul>
+                            <li>Java J2EE (Struts / Spring)</li>
+                            <li>Symfony 3.x / PHP 7</li>
+                            <li>Python Django / Google App Engine</li>
+                        </ul>
+                        <h3>Client Side Technologies</h3>
+                        <ul>
+                            <li>JQuery</li>
+                            <li>Bootstrap 3.x and 4.x</li>
+                            <li>React JS</li>
+                        </ul>
+                        <h3>In project</h3>
+                        <ul>
+                            <li>Developing Android Apps in Java (Dalvik Virtual Machine)</li>
+                            <li>Migrating the client side of web applications to Angular2 as far as possible</li>
+                            <li><i>Containerizing</i> my development environments on my Ubuntu Desktop (Docker/Vagrant)</li>
+                            <li>Testing Ruby/Rails 5 apps</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Resources</h3>
+                        <h4>Personal resources</h4>
+                        <ul>
+                            <li><a href="https://github.com/javaskater?tab=repositories" target="_blank"> My GitHub <i
+                                        class="fa fa-github" aria-hidden="true"></i> Repositories</a></li>
+                            <li><a href="http://wiki.jpmena.eu/index.php?title=Accueil" target="_blank"> My personal MediaWiki <i class="fa fa-wikipedia-w"
+                                                                                                                         aria-hidden="true"></i> <i>(only in French for the moment)</i></a></li>
+                            <li><a href="http://blog.jpmena.eu/" target="_blank"> My Blog <i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <h4>Books</h4>
+                        <ul>
+                            <li><a href="http://shop.oreilly.com/" target="_blank">OReilly eBooks (Deal of the Day)</a></li>
+                            <li><a href="https://www.manning.com/dotd" target="_blank">Manning eBooks (Deal of the Day)</a></li>
+                            <li><a href="http://www.informit.com/" target="_blank">Informit eBooks</a></li>
+                            <li><a href="https://www.packtpub.com/" target="_blank">Packt eBooks</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

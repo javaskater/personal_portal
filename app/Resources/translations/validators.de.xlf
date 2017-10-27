@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="contact_form.subject_message">
+                <source>contact_form.subject_message</source>
+                <target>Objekt darf nicht leer sein</target>
+            </trans-unit>
+            <trans-unit id="contact_form.name_message">
+                <source>contact_form.name_message</source>
+                <target>Der Name darf nicht leer sein</target>
+            </trans-unit>
+            <trans-unit id="contact_form.mail_message23">
+                <source>contact_form.mail_message</source>
+                <target>Bitte eine gültige Emailadresse eingeben</target>
+            </trans-unit>
+            <trans-unit id="contact_form.message_message">
+                <source>contact_form.message_message</source>
+                <target>Ihre Nachricht darf nicht leer sein</target>
+            </trans-unit>
+        </body>
+  </file>
+</xliff>

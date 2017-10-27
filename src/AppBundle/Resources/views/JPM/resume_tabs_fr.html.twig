@@ -1,0 +1,172 @@
+<div class="container-fluid {{ container_class}}" id="short_resumee">
+    <div class="container">
+        <!-- <div class="row">
+            <h3>A short resume:</h3>
+        </div>-->
+        <ul class="nav nav-tabs" role="tablist">
+        	<li class="nav-item">
+                <a class="nav-link active" id="presentation-tab" data-toggle="tab" href="#presentation" role="tab" aria-controls="presentation" aria-expanded="true">En quelques mots:</a>
+             </li>
+            <li class="nav-item">
+            	<a class="nav-link" id="services-personal-tab" data-toggle="tab" href="#services-personal" role="tab" aria-controls="services-personal">Bénévolat:</a>
+            </li>
+            <li class="nav-item">
+            	<a class="nav-link" id="services-techs-tab" data-toggle="tab" href="#services-techs" role="tab" aria-controls="services-techs">Techs:</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="presentation" role="tabpanel" aria-labelledby="presentation-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="{{ asset('jpm/images/jpreduit.png') }}" class="img-fluid" title="Jean-Pierre aux 6 Heures Roller d'Angers (Sept. 2016)" data-toggle="tooltip" data-placement="top" /> 
+                        </div>
+                        <div class="col-sm-4">
+                            <h2 class="text-md-center">Développeur Web expérimenté</h2>
+                            <h3 class="text-md-center">Spécialiste <a href="https://www.drupal.org/8" target="_blank">Drupal8 <i class="fa fa-drupal" aria-hidden="true"></i></a></h3>
+                            <h3 class="text-md-center">au Ministère des Finances (France)</h3>
+                            <h4 class="text-md-center">Egalement formateur à la gestion et au développement de sites
+                                avec <a href="https://www.drupal.org/8" target="_blank">Drupal8 <i class="fa fa-drupal" aria-hidden="true"></i></a></h4>
+                        </div>
+                        <div class="col-sm-4">
+                            <h2 class="text-md-center"><a href="http://www.ec-lille.fr" target="_blank">Ingénieur <i class="fa fa-language" aria-hidden="true"></i> polyglotte</a></h2>
+                            <ul>
+                                <li class="font-italic font-weight-bold">Bilingue en Allemand</li>
+                                <li class="font-italic">Anglais, langue de travail</li>
+                                <li>Espagnol / niveau B2</li>
+                                <li>Italien / niveau B2</li>
+                                <li class="font-italic">Etude du Russe en vue du niveau C1</li>
+                            </ul>
+                            <h5 class="text-md-center">
+								<a href="{{ asset('jpm/uploads/fr/CVEuropassJPMena_fr.pdf') }}"
+									target="_blank" title="Cliquer sur ce lien pour télécharger mon CV" data-toggle="tooltip"
+            data-placement="bottom"> <i class="fa fa-file-pdf-o"
+									aria-hidden="true"></i> Pour en savoir plus (CV au format Europass)
+								</a>
+							</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show" id="services-personal" role="tabpanel" aria-labelledby="services-personal-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h2>
+                                Webmestre depuis 2010 du club <a href="http://rsmontreuil.fr"
+                                                     target="_blank">Roller Skating Montreuillois</a>
+                            </h2>
+                            <h3>incluant la maintenance du site et les migrations (Joomla puis Wordpress)</h3>
+                            <h4>J'ai en particuler développé:</h4>
+                            <ul>
+                                <li>un module Wordpress destiné à récupérer toutes les données du site initial (Joomla 2.5)</li>
+                                <li>un wodule pour présenter de façon dynamique photos d'articles et galleries</li>
+                            </ul>
+                            <h4>Je suis intervenu comme formateur:</h4>
+                            <ul>
+                                <li>J'ai formé cinq responsables de sections du club à l'usage de Wordpress</li>
+                                <li>Et pour compléter la formation mis en place des tutoriaux sur un<a
+                                        href="http://wiki.rsmontreuil.fr" target="_blank">
+                                        DokuWiki dédié</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h2>
+                                Webmestre depuis 2013 <a href="http://rollersports93.fr"
+                                                     target="_blank">du Comité Départemental de Roller de Saine Saint Denis</a>
+                            </h2>
+                            <h3>Oûtre la mise en place et la maintenance du site ...</h3>
+                            <h4>Je suis également intervenu ici comme formateur</h4>
+                            <ul>
+                                <li>J'ai formé deux membres du comité à l'isage de Wordpress</li>
+                                <li>Et de la même façon proposé des tutoriaux sur ce <a
+                                        href="http://wiki.rollersports93.fr" target="_blank">
+                                        DokuWiki dédié</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h2>
+                                Depuis 2009, je suis actif à la commission informatique des <a href="http://rifrando.fr/"
+                                                     target="_blank">Randonneurs Ile de France (RIF)</a>
+                            </h2>
+                            <h3>Le RIF est le principal club de randonnée en Ile de France ( > 3000 randonneurs)</h3>
+                            <p>En tant que membre de cette commission, j'ai:</p>
+                            <ul>
+                                <li>Développé différents scripts en Python detinés à:</li>
+                                <ul>
+                                    <li>Transférer les randonnées en cours d'une base ACCESS vers le site adhérents</li>
+                                    <li>Et dans l'autre sens récupérer via des services REST les randonnées proposées en lignes par les animateurs pour prise en compte dans la gestion ACCCESS de l'association</li>
+                                    <li>réaliser des sauvegardes régulières et cryptées la base de travail de l'association</li>
+                                    <li>Générer automtiquement la version papier du programme de randonnées des 2 prochain mois</li>
+                                </ul>
+                                <li>Apporter les modifications nécessaires au  <a
+                                        href="http://adh.rifrando.asso.fr/pages/mentions_legales"
+                                        target="_blank">site réservé aux adhérents</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show" id="services-techs" role="tabpanel" aria-labelledby="services-techs-tab">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Gestionaires de contenu (CMS)</h3>
+                        <ul>
+                            <li><a href="https://www.drupal.org/8" target="_blank"><i class="fa fa-drupal" aria-hidden="true"></i> Drupal 8</a> est le CMS sur duquel :</li>
+                            <ul>
+                                <li>je développe de solutions complexes dans le cadre de mon activité professionnelle</li>
+                                <li>je forme des administrateurs et des développeurs</li>      
+                            </ul>
+                            <li>Je partage cette expertise sur mon <a href="http://wiki.jpmena.eu/index.php?title=Accueil#Cas_du_d.C3.A9veloppement_Symfony.2FDrupal8" target="_blank">Wiki <i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                            <li><a href="https://wordpress.org/" target="_blank"><i class="fa fa-wordpress" aria-hidden="true"></i>
+                                    </i> Wordpress 4.x</a> est le CMS que j'utilise pour mon activité bénévole de webmestre:</li>
+                            <ul>
+                                <li> <a href="http://rsmontreuil.fr/" target="_blank"> Roller Skating Montreuillois </a></li>
+                                <li> <a href="http://rollersports93.fr/" target="_blank">Comité de Roller du 93 </a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Technologies côté serveur:</h3>
+                        <ul>
+                            <li>Java J2EE (Struts / Spring)</li>
+                            <li>Symfony 3.x / PHP 7</li>
+                            <li>Python Django / Google App Engine</li>
+                        </ul>
+                        <h3>Technologies côté client</h3>
+                        <ul>
+                            <li>JQuery</li>
+                            <li>Bootstrap 3.x and 4.x</li>
+                            <li>React JS</li>
+                        </ul>
+                        <h3>Dans mes cartons</h3>
+                        <ul>
+                            <li>Développer des applications Android  en Java (Dalvik Virtual Machine)</li>
+                            <li>Pousser l'usage de Angualar2 pour les applications web</li>
+                            <li><i>Virtualiser</i> mes serveur de développement sur mon poste de travail Ubuntu (Docker/Vagrant)</li>
+                            <li>Tester Ruby/Rails5</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Les ressources utiles:</h3>
+                        <h4>Ressources personnelles</h4>
+                        <ul>
+                            <li><a href="https://github.com/javaskater?tab=repositories" target="_blank">Mon compte GitHub <i
+                                        class="fa fa-github" aria-hidden="true"></i></a></li>
+                            <li><a href="http://wiki.jpmena.eu/index.php?title=Accueil" target="_blank">Mon Wiki <i class="fa fa-wikipedia-w"
+                                                                                                                         aria-hidden="true"></i></a></li>
+                            <li><a href="http://blog.jpmena.eu/" target="_blank"> Mon Blog <i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <h4>Livres</h4>
+                        <ul>
+                            <li><a href="http://shop.oreilly.com/" target="_blank">OReilly eBooks (Deal of the Day)</a></li>
+                            <li><a href="https://www.manning.com/dotd" target="_blank">Manning eBooks (Deal of the Day)</a></li>
+                            <li><a href="http://www.informit.com/" target="_blank">Informit eBooks</a></li>
+                            <li><a href="https://www.packtpub.com/" target="_blank">Packt eBooks</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

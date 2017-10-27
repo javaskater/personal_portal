@@ -1,0 +1,14 @@
+{# from http://symfony.com/doc/current/email.html #}
+{# src/AppBundle/Resources/views/JPM/mail_for_contact.html.twig #}
+<h3>Contact Request received through <a href="{{ contact_route }}">my portal's contact form</a></h3>
+
+<h4> Message received from {{ name }} at {{ sent_date }}</h4>
+<p>That user was navigating using that specific locale: {{ user_locale }}</p>
+
+<h4>The object/subject of its conact's request is:</h4>
+<p>{{message_subject}}</p>
+
+<h4>The content of its conact's request is:</h4>
+<p>{{message_content}}</p>
+
+<h4>You could answer him at: <a href="mailto:{{contact_mail}}">{{contact_mail}}</a></h4>

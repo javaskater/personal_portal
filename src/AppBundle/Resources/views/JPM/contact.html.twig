@@ -1,0 +1,74 @@
+{# contact.html.twig #}
+{% extends 'AppBundle:JPM:index.html.twig' %}
+{% block main %}
+    {% if mail_success %}
+                <div class="alert alert-success jpm_alert" role="alert">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>{% trans %}contact_form.alert.success{% endtrans %}</strong> {% trans %}contact_form.alert.success.desc{% endtrans %}
+                </div>
+            {% endif %}
+            {% if mail_failure %}
+                <div class="alert alert-danger jpm_alert" role="alert">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>{% trans %}contact_form.alert.error{% endtrans %}</strong> {% trans %}contact_form.alert.error.desc{% endtrans %}
+                </div>
+            {% endif %}
+    <div class="container-fluid {{ page_class }}"> 
+        <div class="container contact_form">
+            {# 
+                    see http://symfony.com/doc/current/form/rendering.html 
+                    and https://v4-alpha.getbootstrap.com/components/forms/
+                    I dont't want default HTML5 navigation see parapgraph HTML5 Valiation in grey on:
+                    http://symfony.com/doc/current/forms.html#rendering-a-form-in-a-template
+            #}
+            {{ form_start(contact_form,{'attr': {'novalidate': 'novalidate'}}) }}
+            <div class="form-group row">
+                {{ form_label(contact_form.subject) }}
+        <div class="col-sm-10">
+            {{ form_widget(contact_form.subject, {'attr': {'class': 'form-control'}}) }}
+        </div>
+        <div class="col-sm-12 form-error">
+            {{ form_errors(contact_form.subject) }}
+        </div>
+    </div>
+    <div class="form-group row">
+        {{ form_label(contact_form.name) }}
+        <div class="col-sm-10">
+            {{ form_widget(contact_form.name, {'attr': {'class': 'form-control'}}) }}
+        </div>
+        <div class="col-sm-12 form-error">
+            {{ form_errors(contact_form.name) }}
+        </div>
+    </div>
+    <div class="form-group row">
+        {{ form_label(contact_form.email) }}
+        <div class="input-group col-sm-10">
+        	<div class="input-group-addon">@</div>
+            {{ form_widget(contact_form.email, {'attr': {'class': 'form-control'}}) }}
+        </div>
+        <div class="col-sm-12 form-error">
+            {{ form_errors(contact_form.email) }}
+        </div>
+    </div>
+    <div class="form-group row">
+        {{ form_label(contact_form.message) }}
+        <div class="col-sm-10">
+            {{ form_widget(contact_form.message, {'attr': {'class': 'form-control'}}) }}
+        </div>
+        <div class="col-sm-12 form-error">
+            {{ form_errors(contact_form.message) }}
+        </div>
+    </div>
+    <div class="form-group row">
+      <div class="offset-sm-2 col-sm-10">
+          {{ form_widget(contact_form.Send, {'attr': {'class': 'btn btn-primary'}}) }}
+       </div>
+    </div>
+    {# Render CSRF token etc .#}
+    <div style="display:none">
+        {{ form_rest(contact_form) }}
+    </div>
+    {{ form_end(contact_form) }}
+</div>
+</div>
+{% endblock %}
