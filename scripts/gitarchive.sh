@@ -45,9 +45,11 @@ bower install
 grunt package
 
 #adding the sqlite database !!!!
-cd $projet_repertoire
-mkdir -p "${archive_repertoire}/${nom_module}/${dir_sqlite}" 
-cp -pv ${path_sqlite} ${archive_repertoire}/${nom_module}/${path_sqlite}
+abs_dir_sqlite="${archive_repertoire}/${nom_module}/${dir_sqlite}" 
+echo " We want to create the database ${path_sqlite}"
+mkdir -p ${abs_dir_sqlite}
+cd "$archive_repertoire/${nom_module}"
+php bin/console doctrine:schema:create
 
 cd $archive_repertoire
 
