@@ -17,5 +17,5 @@
 /web/jpm/node_modules/
 /web/jpm/bower_components/
 /nbproject/
-/.sass-cache/*
-/css/*
+/web/jpm/.sass-cache/
+/web/jpm/css/
