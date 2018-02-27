@@ -1,23 +1,28 @@
 {
   "name": "jpm",
   "version": "0.0.1",
-  "description": "Tooling for processing SASS files to CSS",
-  "main": "gruntfile.js",
+  "description": "JPM Portal",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "octicons": "^7.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "http-server": "^0.11.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "sass",
-    "css"
+    "Gulp",
+    "SASS",
+    "compilation"
   ],
-  "author": "Jean-Pierre MENA",
-  "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^7.1.5",
-    "grunt": "^1.0.1",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-postcss": "^0.9.0",
-    "node-sass": "^4.5.3"
-  }
+  "author": "JPmena",
+  "license": "ISC"
 }

@@ -18,4 +18,6 @@
 /web/jpm/bower_components/
 /nbproject/
 /web/jpm/.sass-cache/
-/web/jpm/css/
+/web/jpm/dist/
+/.idea/
+/nbproject/

@@ -27,7 +27,9 @@ grunt compile
 
 echo "makes the symfony's var directory writable by Apache !!!"
 chmod -R g+rwx "${projet_repertoire}/var"
-sudo chown -R jpmena:www-data "${projet_repertoire}/var"
+sudo chown -R :www-data "${projet_repertoire}/var"
+# Set Gid Bit !!!
+sudo chmod -R g+s "${projet_repertoire}"
 
 cd $init_repertoire
 

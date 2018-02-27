@@ -5,9 +5,7 @@
 {{ nom }}
 {% endblock %}
 {% block stylesheets %}
-<link rel="stylesheet"
-	href="{{ asset('jpm/bower_components/font-awesome/css/font-awesome.min.css') }}" />
-<link rel="stylesheet" href="{{ asset('jpm/css/styles.css') }}" />
+<link rel="stylesheet" href="{{ asset('jpm/dist/css/styles.css') }}" />
 {% endblock %}
 {% block header_javascripts %}
 {{ include ('AppBundle:JPM:google_analytics.html.twig', {'ga_code' : my_ga_code }) }}
@@ -82,11 +80,11 @@
 
 	{% block javascripts %}
 	<script
-		src="{{ asset('jpm/bower_components/jquery/dist/jquery.min.js') }}"></script>
+		src="{{ asset('jpm/dist/js/jquery.min.js') }}"></script>
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 	<script
-		src="{{ asset('jpm/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+		src="{{ asset('jpm/dist/js/bootstrap.min.js') }}"></script>
 	<script>
 		$(function() {
 			$('[data-toggle="tooltip"]').tooltip()
