@@ -9,6 +9,7 @@ const sass = require('gulp-sass');
 
 const srcSass = 'scss';
 const bootstrapSass = 'node_modules/bootstrap/scss';
+const awesomeSass = 'node_modules/font-awesome/scss';
 const distCss = 'dist/css';
 
 const awesomeFonts = 'node_modules/font-awesome/fonts';
@@ -28,7 +29,7 @@ gulp.task('css', function () {
       .pipe(sourcemaps.init())
       .pipe(sass({
         errLogToConsole: true,
-        includePaths: [`${bootstrapSass}/`],
+        includePaths: [`${bootstrapSass}/`, `${awesomeSass}/`],
         precision: 8
       }))
       .pipe(sourcemaps.write('.'))

@@ -40,9 +40,9 @@ cd web/jpm
 #add grunt tooling project
 npm install
 #add the bootstrap kit to your project
-bower install
-#package the css for the production environment
-grunt package
+gulp dist
+#in a production environment I don't need the dev node_modules
+npm prune --production
 
 #adding the sqlite database !!!!
 abs_dir_sqlite="${archive_repertoire}/${nom_module}/${dir_sqlite}" 

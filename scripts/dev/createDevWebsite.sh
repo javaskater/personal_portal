@@ -18,12 +18,10 @@ php bin/console doctrine:schema:create
 
 echo " we need to add the node dependencies to our web project"
 cd web/jpm
-#for the main client libraries
-bower install
 #for the grunt tooling (sass to css)
 npm install
 #create a first uncompressed version of the css style with its maps
-grunt compile
+gulp dist
 
 echo "makes the symfony's var directory writable by Apache !!!"
 chmod -R g+rwx "${projet_repertoire}/var"
