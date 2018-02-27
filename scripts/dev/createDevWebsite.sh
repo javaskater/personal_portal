@@ -9,7 +9,7 @@ dir_sqlite=$(dirname ${path_sqlite})
 echo "++ We actually add the vendor part of our symfony3's project through composer"
 
 cd $projet_repertoire
-composer install
+php ../composer.phar install
 
 echo " We want to create the database ${path_sqlite}"
 mkdir -p ${dir_sqlite}

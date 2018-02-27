@@ -114,6 +114,10 @@
         <source>contact_form.alert.error.desc</source>
         <target>Wegen technischer Schwierigkeiten konnte Ihr Mail nicht gesendet werden. </target>
     </trans-unit>
+    <trans-unit id="32">
+        <source>menu.main.gitlab</source>
+        <target>Mein Gitlab-Konto</target>
+    </trans-unit>
     </body>
   </file>
 </xliff>

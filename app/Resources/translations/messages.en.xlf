@@ -114,6 +114,10 @@
                 <source>contact_form.alert.error.desc</source>
                 <target>Sending mail encountered a problem. </target>
             </trans-unit>
+            <trans-unit id="32">
+                <source>menu.main.gitlab</source>
+                <target>My Gitlab account</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

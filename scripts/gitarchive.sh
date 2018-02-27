@@ -2,6 +2,7 @@
 
 init_repertoire=$(pwd)
 projet_repertoire=$(dirname $init_repertoire)
+composer_path=$(dirname ${projet_repertoire})/composer.phar
 archive_repertoire=$(dirname $projet_repertoire)/tmp
 #echo "$archive_repertoire"
 nom_module=$(basename $projet_repertoire)
@@ -33,7 +34,7 @@ unzip -qq $nom_archive && rm $nom_archive && cd ${nom_module}
 #echo $(pwd)
 
 echo "++ We actually add the vendor part of our symfony3's project through composer"
-composer install
+php $composer_path install
 
 echo " we need to rebuild the bundle.js which bundles all files of our react js project"
 cd web/jpm
@@ -42,7 +43,9 @@ npm install
 #add the bootstrap kit to your project
 gulp dist
 #in a production environment I don't need the dev node_modules
-npm prune --production
+#npm prune --production
+## in our case we can remove the entire node_modules since all has been transported to dist
+rm -rf node_modules
 
 #adding the sqlite database !!!!
 abs_dir_sqlite="${archive_repertoire}/${nom_module}/${dir_sqlite}" 

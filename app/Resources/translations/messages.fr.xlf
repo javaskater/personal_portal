@@ -114,6 +114,10 @@
             <source>contact_form.alert.error.desc</source>
             <target>Problème technique rencontré lors de l'envoi de votre demande. </target>
         </trans-unit>
+        <trans-unit id="32">
+             <source>menu.main.gitlab</source>
+            <target>Mon compte Gitlab</target>
+        </trans-unit>
     </body>
   </file>
 </xliff>
