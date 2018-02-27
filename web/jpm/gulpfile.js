@@ -16,6 +16,7 @@ const octiconsFonts = 'node_modules/octicons/build/svg';
 const distFonts = 'dist/fonts';
 
 const srcJs = 'js';
+const jqueryJs = 'node_modules/jquery/dist';
 const bootstrapJs = 'node_modules/bootstrap/dist/js';
 const distJs = 'dist/js';
 
@@ -41,7 +42,7 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('js', function () {
-    return gulp.src([`${srcJs}/**/*`,`${bootstrapJs}/**/*`])
+    return gulp.src([`${srcJs}/**/*`,`${jqueryJs}/**/*`,`${bootstrapJs}/**/*`])
     .pipe(gulp.dest(distJs));
 });
 
