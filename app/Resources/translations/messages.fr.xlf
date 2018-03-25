@@ -20,12 +20,12 @@
           <target>Sur la voie verte Paris-Londres (stages de roller)</target>
       </trans-unit>
       <trans-unit id="5">
-          <source>carousel.ubuntu_workstation.title</source>
-          <target>Mon poste de travail sous Ubuntu</target>
+          <source>carousel.fedora_workstation.title</source>
+          <target>Mon poste de travail sous Fedora</target>
       </trans-unit>
       <trans-unit id="6">
-          <source>carousel.ubuntu_workstation.desc</source>
-          <target>Développement logiciel soous la Gnome Ubuntu 16.04 (LTS)</target>
+          <source>carousel.fedora_workstation.desc</source>
+          <target>Développement logiciel sous Fedora 27</target>
       </trans-unit>
        <trans-unit id="7">
           <source>carousel.fontainebleau.title</source>

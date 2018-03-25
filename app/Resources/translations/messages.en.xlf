@@ -20,12 +20,12 @@
                 <target>On the Greenway between Paris and London (Inline-skating practice)</target>
             </trans-unit>
             <trans-unit id="5">
-                <source>carousel.ubuntu_workstation.title</source>
-                <target>My Ubuntu Workstation</target>
+                <source>carousel.fedora_workstation.title</source>
+                <target>My Fedora Workstation</target>
             </trans-unit>
             <trans-unit id="6">
-                <source>carousel.ubuntu_workstation.desc</source>
-                <target>Working under Ubuntu 16.04 (LTS)</target>
+                <source>carousel.fedora_workstation.desc</source>
+                <target>Working under fedora 27</target>
             </trans-unit>
             <trans-unit id="7">
                 <source>carousel.fontainebleau.title</source>

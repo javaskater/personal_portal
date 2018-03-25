@@ -13,10 +13,16 @@ php ../composer.phar install
 
 echo " We want to create the database ${path_sqlite}"
 mkdir -p ${dir_sqlite}
+
+if [ -f ${path_sqlite} ]; then
+	rm ${path_sqlite}
+fi
+
 touch ${path_sqlite}
+
 php bin/console doctrine:schema:create
 
-echo " we need to add the node dependencies to our web project"
+echo " we need to add the node dependencies to our web project: we are at $(pwd)"
 cd web/jpm
 #for the grunt tooling (sass to css)
 npm install
@@ -24,11 +30,16 @@ npm install
 gulp dist
 
 echo "makes the symfony's var directory writable by Apache !!!"
-chmod -R g+rwx "${projet_repertoire}/var"
-sudo chown -R :www-data "${projet_repertoire}/var"
 # Set Gid Bit !!!
-sudo chmod -R g+s "${projet_repertoire}"
+chmod -R g+s "${projet_repertoire}"
 
-cd $init_repertoire
+# gives the hand back to symfony
+cd ${projet_repertoire}
+# starts the embedded php server and gives the hand back
+# php bin/console server:start
+# starts the embedded php server and wait !!!
+php bin/console server:run
+## We see the errors directly on the output
+### CTRL+C to stop the server
 
-echo "Website ready for use ..."
+echo "Website ready for use got to http://localhost:8000/ ..."

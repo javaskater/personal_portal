@@ -20,12 +20,12 @@
           <target>Auf dem Radweg zwischen Paris und London (ideal zum Inline-Training)</target>
       </trans-unit>
       <trans-unit id="5">
-          <source>carousel.ubuntu_workstation.title</source>
+          <source>carousel.fedora_workstation.title</source>
           <target>Mein Computer Bildschirm</target>
       </trans-unit>
       <trans-unit id="6">
-          <source>carousel.ubuntu_workstation.desc</source>
-          <target>Software Entwicklung unter Gnome Ubuntu 16.04 (LTS)</target>
+          <source>carousel.fedora_workstation.desc</source>
+          <target>Software Entwicklung mit Fedora 27 Laptop</target>
       </trans-unit>
       <trans-unit id="7">
           <source>carousel.fontainebleau.title</source>

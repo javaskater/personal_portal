@@ -21,3 +21,6 @@
 /web/jpm/dist/
 /.idea/
 /nbproject/
+.buildpath
+.project
+/.settings/
