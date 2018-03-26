@@ -1,13 +1,12 @@
-@import "bootstrap.scss";
-@import "font-awesome.scss";
+
+@import 'mes_variables';
+@import "bootstrap";
+@import "font-awesome";
 /*
 * All my customizations, MAIN CSS
 * Introduction to the SASS syntax: http://sass-lang.com/guide
 * More about Sass possibilities: http://sass-lang.com/documentation/file.SASS_REFERENCE.html
 */
-
-$bg_main_page_main_tone: #F7F9BC;
-$bg_main_page_secondary_tone: #9DC2DF;
 
 .page {
     min-height:800px;
